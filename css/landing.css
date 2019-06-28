@@ -1,0 +1,120 @@
+/* Landing Page Styles */
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	font-size: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.demo-layout-transparent {
+	/* background: url("<?= base_url()?>/Images_Icons/background_a.jpg") center / */
+	/* cover; */
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+	/* This background is dark, so we set text to white. Use 87% black instead if
+        your background is light. */
+	color: white;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+	position: relative;
+	opacity: 0.7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+
+	background-attachment: fixed;
+}
+
+.pimg1 {
+	background-image: url("../Images_Icons/background_a.jpg");
+	min-height: 100%;
+}
+
+.pimg2 {
+	background-image: url("../Images_Icons/background_d.jpg");
+	min-height: 400px;
+}
+
+.pimg3 {
+	background-image: url("../Images_Icons/background_c.jpg");
+	min-height: 400px;
+}
+
+.pimg4 {
+	background-image: url("../Images_Icons/background_a.jpg");
+	min-height: 400px;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.ptext .border {
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+.ptext .border .trans {
+	background-color: transparent;
+}
+
+.bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+
+@media (max-width: 568px) {
+	.pimg1,
+	.pimg2,
+	.pimg3 {
+		background-attachment: scroll;
+	}
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+
